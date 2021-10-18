@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+html {
+  background-color: #fff;
+  height: 140%;
+  scroll-behavior: smooth;
+}
+.Company {
+  background-image: url("https://marketcityhawaii.com/wp-content/uploads/2021/07/unnamed.png");
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+  top: 1%;
+  left: 41%;
+  width: 18%;
+  height: 15%;
+  z-index: 2;
+  background-repeat: no-repeat;
+  transition: ease-in-out 350ms;
+  cursor: pointer;
+}
+.Company:active {
+  cursor: pointer;
+}
+.Pager {
+  background-color: rgb(255, 246, 193);
+  width: 75%;
+  height: 210%;
+  top: 42%;
+  left: 12.5%;
+  position: absolute;
+  align-items: center;
+  border-radius: 5px;
+}
+.Pager2 {
+  background-color: rgb(255, 246, 193);
+  width: 75%;
+  color: black;
+  height: 20%;
+  top: 20%;
+  left: 12.5%;
+  position: absolute;
+  align-items: center;
+  border-radius: 5px;
+}
+.contact-info {
+  width: 100%;
+  color: black;
+  height: 5%;
+  padding: 0rem;
+  position: absolute;
+  text-align: center;
+  left: 0%;
+  top: 25%;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.Menu {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  left: 30%;
+  top: 12.6%;
+  font-size: 20px;
+  height: 10%;
+  font-family: "Rubik", sans-serif;
+  width: 5%;
+}
+.Information {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  right: 26%;
+  top: 12.6%;
+  width: 10%;
+  height: 5%;
+  font-size: 20px;
+  z-index: 2;
+  font-family: "Rubik", sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+  .Information {
+    right: 30%;
+    top: 15%;
+  }
+  .Menu {
+    left: 12%;
+    height: 3%;
+    width: 15%;
+    top: 15%;
+  }
+  .contact-info {
+    width: 100%;
+    left: 0%;
+    top: 20%;
+    font-size: 16px;
+  }
+  .Company {
+    width: 40%;
+    left: 30%;
+    height: 10%;
+    top: 3%;
+  }
+  .Pager {
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 33%;
+  }
+  .Pager2 {
+    width: 90%;
+    left: 5%;
+    height: 12%;
+  }
+}
+.component {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 100;
+}
+#previous {
+  cursor: pointer;
+  background-image: url("https://static.thenounproject.com/png/11587-200.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40px;
+  width: 40px;
+  transform: rotate(180deg);
+  left: 5%;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  opacity: 60%;
+}
+#next {
+  cursor: pointer;
+  background-image: url("https://static.thenounproject.com/png/11587-200.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40px;
+  width: 40px;
+  right: 5%;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  opacity: 60%;
+}
+#image {
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  z-index: 5;
+  width: 900px;
+  top: 5%;
+}
+@media only screen and (max-width: 800px) {
+  #image {
+    width: 100%;
+    left: 0%;
+    top: 2%;
+  }
+}

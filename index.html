@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <title>Da Best Pho</title>
+  </head>
+  <a class="Company" href="https://dabestphohi.com"></a>
+  <a class="Menu" href="#menu" style="cursor: pointer;">MENU</a>
+  <a class="Information" href="#info" style="cursor: pointer;">INFORMATION</a>
+  <div class="Pager2" id="info-page">
+    <div class="contact-info" id="info">Tel:(808) 376-0800 </br> Market City Shopping Center </br> 2919 Kapiolani Blvd. Honolulu, Hi 96826</div>
+</div>
+  <div class="Pager" id="menu">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+
+            var images = [
+                "images/1.jpg",
+                "images/2.jpg",
+                "images/3.jpg",
+                "images/4.jpg",
+                "images/5.jpg",
+                "images/6.jpg",
+                "images/7.jpg",
+                "images/8.jpg"  
+            ];
+
+            var imageIndex = 0;
+
+            $("#previous").on("click", function(){          
+                imageIndex = (imageIndex + images.length -1) % (images.length);    
+                $("#image").attr('src', images[imageIndex]);
+            });
+
+            $("#next").on("click", function(){
+                imageIndex = (imageIndex+1) % (images.length);    
+                $("#image").attr('src', images[imageIndex]);
+            });
+
+            $("#image").attr(images[0]);
+
+        });
+    </script>
+    <div id="imageGallery">    
+      <img id="image" src="images/1.jpg" />
+      <div id="previous"></div>    
+      <div id="next"></div>
+    </div>       
+</div>
+</html>
